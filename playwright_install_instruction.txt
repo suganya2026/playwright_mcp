@@ -9,9 +9,7 @@ npm install -g playwright @playwright/mcp
 # Install Playwright browsers
 npx playwright install
 
-# Update Cursor mcp.json
-mkdir -p ~/.cursor
-nano  ~/.cursor/mcp.json
+# Update Cursor mcp.json by visiting Cursor-->Setting-->MCP
 
 
     "playwright": {
