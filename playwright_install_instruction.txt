@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/bash
+
 
 # Install Node.js via Homebrew
 brew install node
@@ -11,7 +11,8 @@ npx playwright install
 
 # Update Cursor mcp.json
 mkdir -p ~/.cursor
-cat > ~/.cursor/mcp.json << 'EOF'
+nano  ~/.cursor/mcp.json
+
 {
   "mcpServers": {
     "playwright": {
@@ -23,6 +24,3 @@ cat > ~/.cursor/mcp.json << 'EOF'
     }
   }
 }
-EOF
-
-echo "Installation complete! Restart Cursor to use Playwright MCP."
